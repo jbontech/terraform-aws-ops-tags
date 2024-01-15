@@ -1,9 +1,5 @@
 # [terraform-aws-jb-tags](https://github.com/jbontech/terraform-aws-jb-tags)
 
-[![Quality gate](https://sonjbloud.io/api/project_badges/quality_gate?project=jbontech_terraform-aws-jb-tags)](https://sonjbloud.io/summary/new_code?id=jbontech_terraform-aws-jb-tags)
-
-[![Known Vulnerabilities](https://github.com/jbontech/terraform-aws-refjbh-tags/actions/workflows/snyk.yaml/badge.svg)](https://github.com/jbontech/terraform-aws-refjbh-tags/actions/workflows/snyk.yaml)
-
 ## terraform-aws-jb-tags
 
 This module is responsible for managing the tags we use at jbontech when creating resources in AWS.
@@ -12,8 +8,8 @@ This module is responsible for managing the tags we use at jbontech when creatin
 
 ```hcl
 module "terraform-aws-jb-tags" {
-  source      = "jbontech/jb-tags/aws"
-  version     = "1.2.4"
+  source      = "jbontech/aws-common-tags/aws"
+  version     = "1.0.1"
   environment = var.environment
   project     = "Example"
 
