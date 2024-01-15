@@ -1,0 +1,22 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terraform-aws-refarch-tags
+  namespace: arc
+  description: Terraform module for common resource tags.
+  annotations:
+    snyk.io/org-id: 04111b7b-2ba8-404b-8a16-42a04448794d
+    github.com/project-slug: jbontech/terraform-aws-refarch-tags
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://jbontech.github.io/arc-docs/arc-iac-docs/
+      title: ARC Docs
+      icon: dashboard
+    - url: https://jbontech.github.io/arc-docs/arc-iac-docs/modules/terraform-aws-refarch-tags/
+      title: ARC Tags Docs
+      icon: dashboard    
+spec:
+  type: service
+  owner: jbontech
+  lifecycle: production

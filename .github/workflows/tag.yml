@@ -1,0 +1,21 @@
+---
+name: Tag
+
+on:                  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - main
+
+
+jobs:
+  ## tag
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: patch
+          REPO_OWNER: jbontech
